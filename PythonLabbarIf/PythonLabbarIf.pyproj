@@ -1,0 +1,69 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ce3986a9-1053-4221-a8de-4bec3ad82865</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Labb12Variant.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonLabbarIf</Name>
+    <RootNamespace>PythonLabbarIf</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Labb1.py" />
+    <Compile Include="Labb11.py" />
+    <Compile Include="Labb10.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb12.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb12Variant.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb7.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb8.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb9.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
